@@ -40,7 +40,7 @@ public class AppOrderPositiveTest {
     @Test
     public void success() {
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иванов Иван");
-        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+7921335015");
+        driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79231335015");
         driver.findElement(By.cssSelector("[data-test-id=agreement] input")).click();
         driver.findElement(By.cssSelector("button.button")).click();
         String expected = "Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время.";
